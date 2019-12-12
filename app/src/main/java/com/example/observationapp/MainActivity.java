@@ -22,5 +22,19 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
+        mDatabase = FirebaseDatabase.getInstance().getReference();
+    }
+
+    public void onClick(View v){
+        EditText username = (EditText) findViewById(R.id.name);
+        EditText password = (EditText) findViewById(R.id.password);
+
+        User newUser = new User(username.getText().toString(), password.getText().toString());
+        mDatabase.child("user").setValue(newUser);
+
+        Intent intent = new Intent(MainActivity.this, DisplayActivity.class);
+        startActivity(intent);
     }
 }

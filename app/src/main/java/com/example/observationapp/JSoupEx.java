@@ -24,8 +24,12 @@ public class JSoupEx extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jsoup_ex);
+
+        quote = (TextView) findViewById(R.id.quote);
+        author = (TextView) findViewById(R.id.author);
     }
 
     public void scrape(View v){
+        new RetrieveFeedTask().execute();
     }
 }
