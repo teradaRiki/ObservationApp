@@ -29,6 +29,8 @@ public class JSoupEx extends AppCompatActivity {
         author = (TextView) findViewById(R.id.author);
     }
 
+
+
     public void scrape(View v){
         new RetrieveFeedTask().execute();
     }
