@@ -39,6 +39,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
+    <!--This is the TextView that I use to display the scraped Article title-->
     <TextView
         android:id="@+id/quote"
         android:layout_width="@dimen/editTextWidth"
@@ -50,6 +51,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
+    <!--This is the Textview that I was going to use to display the scraped Journalist-->
     <TextView
         android:id="@+id/author"
         android:layout_width="@dimen/editTextWidth"
@@ -61,6 +63,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/quote" />
 
+    <!--This is the button that runs the execute() static method of the RetrieveFeedTask-->
     <Button
         android:id="@+id/get"
         android:layout_width="@dimen/editTextWidth"

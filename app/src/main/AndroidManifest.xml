@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.observationapp">
 
+    <!--This is the app manifest, and we will do a couple of changes here
+        The first line lets phone have internet connection, which is necessary for the phone
+        to scrape the internet-->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -11,6 +14,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <!--This is the launching activity. It isn't the MainActiviy.java because
+        I created this activity and manually changed it to the launching activity.
+        i did this by adding the code of the tag <intent-filter>. Whether this exists
+        or not doesn't affect the code.-->
         <activity android:name=".JSoupEx">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

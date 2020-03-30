@@ -20,12 +20,18 @@ android {
     }
 }
 
+/**
+ * This is where we will add the Jsoup library to our code. The exact line of code is:
+ * implementation 'org.jsoup:jsoup:1.11.1'
+ * The library we use is 1.11.1. This is deprecated and the new library version is 1.12.1
+ * For our purposes, the library does not contain the functions we need to access secure websites i.e. https so
+ * we will be using this library temporarily. If you would like to use the newer library, please do independent research.**/
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation 'com.google.firebase:firebase-database:16.0.4'
-    implementation 'org.jsoup:jsoup:1.11.1'
+    implementation 'org.jsoup:jsoup:1.11.1' /*<------- This is the line*/
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'

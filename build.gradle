@@ -1,4 +1,7 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+/** In this top-level gradle, we will not be changing any of the configurations.
+ *  For installing Firebase, we implemented the classpath, but because this is an individual
+ *  library, it does not require any top level class changes.**/
 
 buildscript {
     repositories {
